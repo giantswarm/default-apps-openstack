@@ -1,5 +1,13 @@
 name: default-apps-openstack
+organization: ""
 serviceType: managed
+
+cluster:
+  name: ""
+  namespace: ""
+  organization: ""
+
+remoteNamespace: kube-system
 
 project:
   branch: "[[ .Branch ]]"
@@ -10,3 +18,6 @@ image:
   name: giantswarm/default-apps-openstack
   tag: v0.0.1
   pullPolicy: IfNotPresent
+
+appOperator:
+  version: 5.2.0

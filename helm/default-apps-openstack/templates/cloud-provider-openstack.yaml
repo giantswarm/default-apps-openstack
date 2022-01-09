@@ -1,0 +1,15 @@
+apiVersion: application.giantswarm.io/v1alpha1
+kind: App
+metadata:
+  annotations:
+    chart-operator.giantswarm.io/force-helm-upgrade: "true"
+  labels:
+    {{- include "labels.common" . | nindent 4 }}
+  name: cloud-provider-openstack-{{ .Values.cluster.name }}
+  namespace: {{ .Release.Namespace }}
+spec:
+  catalog: default
+  {{- include "kubeconfig" . | nindent 2 }}
+  name: cloud-provider-openstack
+  namespace: kube-system
+  version: 0.1.1
