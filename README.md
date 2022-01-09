@@ -1,9 +1,9 @@
-[![CircleCI](https://circleci.com/gh/giantswarm/{APP-NAME}-app.svg?style=shield)](https://circleci.com/gh/giantswarm/{APP-NAME}-app)
+[![CircleCI](https://circleci.com/gh/giantswarm/default-apps-openstack-app.svg?style=shield)](https://circleci.com/gh/giantswarm/default-apps-openstack-app)
 
-# {APP-NAME} chart
+# default-apps-openstack chart
 
-Giant Swarm offers a {APP-NAME} App which can be installed in workload clusters.
-Here we define the {APP-NAME} chart with its templates and default configuration.
+Giant Swarm offers a default-apps-openstack App including the default apps installed in all OpenStack workload clusters.
+Here we define the default-apps-openstack chart with its templates and default configuration.
 
 **What is this app?**
 **Why did we add it?**
@@ -59,6 +59,3 @@ Not following these limitations will most likely result in a broken deployment.
 
 *
 
-## Credit
-
-* {APP HELM REPOSITORY}

@@ -1,0 +1,12 @@
+apiVersion: v1
+appVersion: 0.0.1
+name: default-apps-openstack
+description: A Helm chart for default-apps-openstack
+engine: gotpl
+home: https://github.com/giantswarm/default-apps-openstack-app
+sources:
+- https://github.com/some-org/some-repo
+version: 0.1.0
+annotations:
+  branch: my-branch
+  commit: f00bar
