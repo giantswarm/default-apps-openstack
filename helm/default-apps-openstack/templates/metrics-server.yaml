@@ -11,5 +11,5 @@ spec:
   catalog: default
   {{- include "kubeconfig" . | nindent 2 }}
   name: metrics-server
-  namespace: kube-system
+  namespace: {{ .Values.remoteNamespace }}
   version: 1.5.0

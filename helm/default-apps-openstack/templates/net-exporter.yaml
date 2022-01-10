@@ -11,5 +11,5 @@ spec:
   catalog: default
   {{- include "kubeconfig" . | nindent 2 }}
   name: net-exporter
-  namespace: kube-system
+  namespace: {{ .Values.remoteNamespace }}
   version: 1.10.3

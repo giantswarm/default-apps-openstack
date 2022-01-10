@@ -11,5 +11,5 @@ spec:
   catalog: default
   {{- include "kubeconfig" . | nindent 2 }}
   name: chart-operator
-  namespace: kube-system
+  namespace: {{ .Values.remoteNamespace }}
   version: 2.19.1
