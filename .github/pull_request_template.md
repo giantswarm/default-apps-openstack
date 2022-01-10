@@ -13,7 +13,6 @@ Description on how default-apps-openstack can be tested.
 
 Description of features to additionally test for default-apps-openstack installations.
 
-- [ ] check reconciliation of existing resources after upgrading
 - [ ] X still works after upgrade
 - [ ] Y is installed correctly
 
