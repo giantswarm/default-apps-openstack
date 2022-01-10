@@ -1,5 +1,4 @@
 name: default-apps-openstack
-organization: ""
 serviceType: managed
 
 cluster:
@@ -8,16 +7,6 @@ cluster:
   organization: ""
 
 remoteNamespace: kube-system
-
-project:
-  branch: "[[ .Branch ]]"
-  commit: "[[ .SHA ]]"
-
-image:
-  registry: quay.io
-  name: giantswarm/default-apps-openstack
-  tag: v0.0.1
-  pullPolicy: IfNotPresent
 
 appOperator:
   version: 5.2.0
