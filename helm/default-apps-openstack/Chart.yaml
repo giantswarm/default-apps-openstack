@@ -6,5 +6,4 @@ engine: gotpl
 home: https://github.com/giantswarm/default-apps-openstack-app
 version: 0.1.0
 annotations:
-  branch: my-branch
-  commit: f00bar
+  application.giantswarm.io/team: "honeybadger"
