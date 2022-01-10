@@ -10,6 +10,6 @@ metadata:
 spec:
   catalog: default
   {{- include "kubeconfig" . | nindent 2 }}
-  name: node-exporter
-  namespace: {{ .Values.remoteNamespace }}
+  name: node-exporter-app
+  namespace: kube-system
   version: 1.8.0

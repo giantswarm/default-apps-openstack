@@ -18,16 +18,16 @@ Common labels
 */}}
 {{- define "labels.common" -}}
 app-operator.giantswarm.io/version: {{ .Values.appOperator.version }}
-app.kubernetes.io/name: {{ .Values.name }}
+app.kubernetes.io/name: {{ include "name" . }}
 app.kubernetes.io/instance: {{ .Release.Name | quote }}
 app.giantswarm.io/branch: {{ .Chart.Annotations.branch | replace "#" "-" | replace "/" "-" | replace "." "-" | trunc 63 | trimSuffix "-" | quote }}
 app.giantswarm.io/commit: {{ .Chart.Annotations.commit | quote }}
-app.kubernetes.io/managed-by: {{ .Release.Service | quote }}
-app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
+app.kubernetes.io/managed-by: {{ .Release.Name | quote }}
+app.kubernetes.io/version: {{ .Chart.Version | quote }}
 helm.sh/chart: {{ include "chart" . | quote }}
-giantswarm.io/cluster: {{ .Values.cluster.name }}
-giantswarm.io/organization: {{ .Values.organization }}
-giantswarm.io/service-type: {{ .Values.serviceType }}
+giantswarm.io/cluster: {{ .Values.cluster.name | quote }}
+giantswarm.io/organization: {{ .Values.cluster.organization | quote }}
+giantswarm.io/service-type: managed
 {{- end -}}
 
 {{- define "kubeconfig" -}}
@@ -37,5 +37,5 @@ kubeConfig:
   inCluster: false
   secret:
     name: {{ .Values.cluster.name }}-kubeconfig
-    namespace: {{ .Values.cluster.namespace }}
+    namespace: {{ .Release.Namespace }}
 {{- end -}}

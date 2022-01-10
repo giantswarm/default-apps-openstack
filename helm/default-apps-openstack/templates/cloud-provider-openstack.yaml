@@ -10,6 +10,6 @@ metadata:
 spec:
   catalog: default
   {{- include "kubeconfig" . | nindent 2 }}
-  name: cloud-provider-openstack
-  namespace: {{ .Values.remoteNamespace }}
+  name: cloud-provider-openstack-app
+  namespace: kube-system
   version: 0.1.1

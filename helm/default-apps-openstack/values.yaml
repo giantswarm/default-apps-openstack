@@ -1,12 +1,6 @@
-name: default-apps-openstack
-serviceType: managed
-
 cluster:
   name: ""
-  namespace: ""
   organization: ""
-
-remoteNamespace: kube-system
 
 appOperator:
   version: 5.2.0
