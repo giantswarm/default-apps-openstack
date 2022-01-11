@@ -2,7 +2,7 @@ apiVersion: application.giantswarm.io/v1alpha1
 kind: App
 metadata:
   annotations:
-    chart-operator.giantswarm.io/force-helm-upgrade: "true"
+    chart-operator.giantswarm.io/force-helm-upgrade: "false"
   labels:
     {{- include "labels.common" . | nindent 4 }}
   name: calico-{{ .Values.cluster.name }}
