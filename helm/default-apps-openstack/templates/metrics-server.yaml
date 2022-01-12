@@ -5,7 +5,7 @@ metadata:
     chart-operator.giantswarm.io/force-helm-upgrade: "true"
   labels:
     {{- include "labels.common" . | nindent 4 }}
-  name: metrics-server-{{ .Values.cluster.name }}
+  name: {{ .Values.cluster.name }}-metrics-server
   namespace: {{ .Release.Namespace }}
 spec:
   catalog: default

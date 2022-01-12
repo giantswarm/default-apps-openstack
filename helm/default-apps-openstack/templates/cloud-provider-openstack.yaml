@@ -5,7 +5,7 @@ metadata:
     chart-operator.giantswarm.io/force-helm-upgrade: "true"
   labels:
     {{- include "labels.common" . | nindent 4 }}
-  name: cloud-provider-openstack-{{ .Values.cluster.name }}
+  name: {{ .Values.cluster.name }}-cloud-provider-openstack
   namespace: {{ .Release.Namespace }}
 spec:
   catalog: default
