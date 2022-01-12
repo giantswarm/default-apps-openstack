@@ -10,6 +10,7 @@ metadata:
 spec:
   catalog: default
   {{- include "kubeconfig" . | nindent 2 }}
+  {{- include "config" . | nindent 2 }}
   name: metrics-server-app
   namespace: kube-system
   version: 1.5.0

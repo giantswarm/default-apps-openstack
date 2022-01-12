@@ -39,3 +39,10 @@ kubeConfig:
     name: {{ .Values.cluster.name }}-kubeconfig
     namespace: {{ .Release.Namespace }}
 {{- end -}}
+
+{{- define "config" -}}
+config:
+  configMap:
+    name: {{ .Values.cluster.name }}-cluster-values
+    namespace: {{ .Release.Namespace }}
+{{- end -}}

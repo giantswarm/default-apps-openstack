@@ -10,6 +10,10 @@ metadata:
 spec:
   catalog: default
   {{- include "kubeconfig" . | nindent 2 }}
+  {{- include "config" . | nindent 2 }}
+    secret:
+      name: {{ .Values.cluster.name }}-cluster-values
+      namespace: {{ .Release.Namespace }}
   name: cloud-provider-openstack-app
   namespace: kube-system
   version: 0.1.1
