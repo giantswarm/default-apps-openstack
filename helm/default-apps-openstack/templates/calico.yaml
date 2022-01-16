@@ -6,11 +6,11 @@ metadata:
   labels:
     {{- include "labels.common" . | nindent 4 }}
   name: {{ .Values.cluster.name }}-calico
-  namespace: {{ .Release.Namespace }}
+  namespace: {{ .Values.cluster.namespace }}
 spec:
   catalog: default
   {{- include "kubeconfig" . | nindent 2 }}
   {{- include "config" . | nindent 2 }}
-  name: calico-app
+  name: calico
   namespace: kube-system
   version: 0.2.0

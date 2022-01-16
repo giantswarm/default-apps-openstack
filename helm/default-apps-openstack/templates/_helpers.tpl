@@ -26,7 +26,7 @@ app.kubernetes.io/managed-by: {{ .Release.Name | quote }}
 app.kubernetes.io/version: {{ .Chart.Version | quote }}
 helm.sh/chart: {{ include "chart" . | quote }}
 giantswarm.io/cluster: {{ .Values.cluster.name | quote }}
-giantswarm.io/organization: {{ .Values.cluster.organization | quote }}
+giantswarm.io/organization: {{ .Values.organization.name | quote }}
 giantswarm.io/service-type: managed
 {{- end -}}
 
@@ -37,12 +37,12 @@ kubeConfig:
   inCluster: false
   secret:
     name: {{ .Values.cluster.name }}-kubeconfig
-    namespace: {{ .Release.Namespace }}
+    namespace: {{ .Values.organization.namespace }}
 {{- end -}}
 
 {{- define "config" -}}
 config:
   configMap:
     name: {{ .Values.cluster.name }}-cluster-values
-    namespace: {{ .Release.Namespace }}
+    namespace: {{ .Values.cluster.namespace }}
 {{- end -}}

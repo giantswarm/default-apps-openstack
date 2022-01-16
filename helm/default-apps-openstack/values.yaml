@@ -1,6 +1,10 @@
 cluster:
   name: ""
-  organization: ""
+  namespace: ""
+
+organization:
+  name: ""
+  namespace: ""
 
 appOperator:
   version: 5.2.0
