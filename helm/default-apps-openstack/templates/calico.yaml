@@ -11,6 +11,6 @@ spec:
   catalog: default
   {{- include "kubeconfig" . | nindent 2 }}
   {{- include "config" . | nindent 2 }}
-  name: calico-app
+  name: calico
   namespace: kube-system
   version: 0.2.0
