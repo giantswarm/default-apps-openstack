@@ -1,6 +1,2 @@
-cluster:
-  name: ""
-  organization: ""
-
-appOperator:
-  version: 5.2.0
+clusterName: ""
+organization: ""
