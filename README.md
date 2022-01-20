@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/giantswarm/default-apps-openstack-app.svg?style=shield)](https://circleci.com/gh/giantswarm/default-apps-openstack-app)
+[![CircleCI](https://circleci.com/gh/giantswarm/default-apps-openstack.svg?style=shield)](https://circleci.com/gh/giantswarm/default-apps-openstack)
 
 # default-apps-openstack chart
 
