@@ -25,7 +25,7 @@ app.kubernetes.io/managed-by: {{ .Release.Name | quote }}
 app.kubernetes.io/version: {{ .Chart.Version | quote }}
 helm.sh/chart: {{ include "chart" . | quote }}
 giantswarm.io/cluster: {{ .Values.clusterName | quote }}
-giantswarm.io/organization: {{ .Values.cluster.organization | quote }}
+giantswarm.io/organization: {{ .Values.organization | quote }}
 giantswarm.io/service-type: managed
 {{- end -}}
 
