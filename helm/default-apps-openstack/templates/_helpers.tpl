@@ -17,7 +17,7 @@ Create chart name and version as used by the chart label.
 Common labels
 */}}
 {{- define "labels.common" -}}
-app-operator.giantswarm.io/version: {{ .Values.appOperator.version }}
+app-operator.giantswarm.io/version: 5.5.1
 app.kubernetes.io/name: {{ include "name" . }}
 app.kubernetes.io/instance: {{ .Release.Name | quote }}
 app.giantswarm.io/branch: {{ .Chart.Annotations.branch | replace "#" "-" | replace "/" "-" | replace "." "-" | trunc 63 | trimSuffix "-" | quote }}
@@ -25,24 +25,24 @@ app.giantswarm.io/commit: {{ .Chart.Annotations.commit | quote }}
 app.kubernetes.io/managed-by: {{ .Release.Name | quote }}
 app.kubernetes.io/version: {{ .Chart.Version | quote }}
 helm.sh/chart: {{ include "chart" . | quote }}
-giantswarm.io/cluster: {{ .Values.cluster.name | quote }}
-giantswarm.io/organization: {{ .Values.cluster.organization | quote }}
+giantswarm.io/cluster: {{ .Values.clusterName | quote }}
+giantswarm.io/organization: {{ .Values.organization | quote }}
 giantswarm.io/service-type: managed
 {{- end -}}
 
 {{- define "kubeconfig" -}}
 kubeConfig:
   context:
-    name: {{ .Values.cluster.name }}-admin@{{ .Values.cluster.name }}
+    name: {{ .Values.clusterName }}-admin@{{ .Values.clusterName }}
   inCluster: false
   secret:
-    name: {{ .Values.cluster.name }}-kubeconfig
+    name: {{ .Values.clusterName }}-kubeconfig
     namespace: {{ .Release.Namespace }}
 {{- end -}}
 
 {{- define "config" -}}
 config:
   configMap:
-    name: {{ .Values.cluster.name }}-cluster-values
+    name: {{ .Values.clusterName }}-cluster-values
     namespace: {{ .Release.Namespace }}
 {{- end -}}

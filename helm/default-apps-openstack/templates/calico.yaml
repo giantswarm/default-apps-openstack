@@ -5,7 +5,7 @@ metadata:
     chart-operator.giantswarm.io/force-helm-upgrade: "false"
   labels:
     {{- include "labels.common" . | nindent 4 }}
-  name: {{ .Values.cluster.name }}-calico
+  name: {{ .Values.clusterName }}-calico
   namespace: {{ .Release.Namespace }}
 spec:
   catalog: default-test
