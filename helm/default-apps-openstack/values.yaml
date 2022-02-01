@@ -1,2 +1,5 @@
 clusterName: ""
 organization: ""
+
+oidc:
+  enabled: true

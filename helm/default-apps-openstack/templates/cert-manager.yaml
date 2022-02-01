@@ -1,0 +1,18 @@
+{{- if .Values.oidc.enabled -}}
+apiVersion: application.giantswarm.io/v1alpha1
+kind: App
+metadata:
+  annotations:
+    chart-operator.giantswarm.io/force-helm-upgrade: "true"
+  labels:
+    {{- include "labels.common" . | nindent 4 }}
+  name: {{ .Values.clusterName }}-cert-manager
+  namespace: {{ .Release.Namespace }}
+spec:
+  catalog: default
+  {{- include "kubeconfig" . | nindent 2 }}
+  {{- include "config" . | nindent 2 }}
+  name: cert-manager
+  namespace: kube-system
+  version: 2.12.0
+{{ end -}}
