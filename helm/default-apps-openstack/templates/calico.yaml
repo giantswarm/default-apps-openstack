@@ -8,9 +8,9 @@ metadata:
   name: {{ .Values.cluster.name }}-calico
   namespace: {{ .Release.Namespace }}
 spec:
-  catalog: default
+  catalog: default-test
   {{- include "kubeconfig" . | nindent 2 }}
   {{- include "config" . | nindent 2 }}
   name: calico
   namespace: kube-system
-  version: 0.2.0
+  version: 0.2.1-bb1e2721e52beb0f5dd61227e4da5d58d55697ab
