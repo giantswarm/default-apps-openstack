@@ -13,4 +13,4 @@ spec:
   {{- include "config" . | nindent 2 }}
   name: calico
   namespace: kube-system
-  version: 0.2.0
+  version: 0.2.1
