@@ -12,7 +12,7 @@ spec:
   catalog: control-plane-catalog # TODO: push to default catalog
   {{- include "kubeconfig" . | nindent 2 }}
   {{- include "config" . | nindent 2 }}
-  name: dex
+  name: dex-app
   namespace: kube-system
   version: 1.21.1
 {{ end -}}
