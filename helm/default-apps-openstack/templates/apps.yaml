@@ -1,4 +1,82 @@
-{{- range .Values.apps -}}
-{{ template "app" . }}
-{{ template "userConfig" . }}
+{{- $clusterName := .Values.clusterName }}
+{{- $namespace := .Release.Namespace }}
+{{- range .Values.apps }}
+---
+apiVersion: application.giantswarm.io/v1alpha1
+kind: App
+metadata:
+  annotations:
+    chart-operator.giantswarm.io/force-helm-upgrade: "{{ .forceUpgrade }}"
+  labels:
+    {{- include "labels.common" $ | nindent 4 }}
+  name: {{ $clusterName }}-{{ .appName }}
+  namespace: {{ $namespace }}
+spec:
+  catalog: {{ .catalog }}
+  kubeConfig:
+    context:
+      name: {{ $clusterName }}-admin@{{ $clusterName }}
+    inCluster: false
+    secret:
+      name: {{ $clusterName }}-kubeconfig
+      namespace: {{ $namespace }}
+  {{- with .clusterValues }}
+  {{- if or .configMap .secret }}
+  config:
+  {{- if .configMap }}
+    configMap:
+      name: {{ $clusterName }}-cluster-values
+      namespace: {{ $namespace }}
+  {{- end }}
+  {{- if .secret }}
+    secret:
+      name: {{ $clusterName }}-cluster-values
+      namespace: {{ $namespace }}
+  {{- end }}
+  {{- end }}
+  {{- end }}
+  {{- with .userConfig }}
+  {{- if or .configMap .secret }}
+  userConfig:
+  {{- if .configMap }}
+    configMap:
+      name: {{ $clusterName }}-user-values
+      namespace: {{ $namespace }}
+  {{- end }}
+  {{- if .secret }}
+    secret:
+      name: {{ $clusterName }}-user-values
+      namespace: {{ $namespace }}
+  {{- end }}
+  {{- end }}
+  {{- end }}
+  name: {{ .chartName }}
+  namespace: {{ .namespace }}
+  version: {{ .version }}
+{{- with .userConfig }}
+{{- if .configMap }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    {{- include "labels.common" $ | nindent 4 }}
+  name: {{ $clusterName }}-user-values
+  namespace: {{ $namespace }}
+data:
+  {{- .configMap | toYaml | toString | nindent 2 }}
+{{- end }}
+---
+{{- if .secret }}
+apiVersion: v1
+kind: Secret
+metadata:
+  labels:
+    {{- include "labels.common" $ | nindent 4 }}
+  name: {{ $clusterName }}-user-values
+  namespace: {{ $namespace }}
+stringData:
+  {{ .configMap | indent 2 }}
+{{- end }}
+{{- end }}
 {{- end -}}

@@ -1,74 +1,74 @@
-clusterName: ""
-organization: ""
+clusterName: "test"
+organization: "org"
 
 apps:
-# calico
-- appName: calico
-  chartName: calico
-  catalog: default
-  clusterValues:
-    configMap: true
-    secret: false
-  forceUpgrade: false
-  namespace: kube-system
-  version: 0.2.1
-# cert-exporter
-- appName: cert-exporter
-  chartName: cert-exporter
-  catalog: default
-  clusterValues:
-    configMap: true
-    secret: false
-  forceUpgrade: true
-  namespace: kube-system
-  version: 2.0.0
-# cloud-provider-openstack
-- appName: cloud-provider-openstack
-  chartName: cloud-provider-openstack-app
-  catalog: default
-  clusterValues:
-    configMap: true
-    secret: true
-  forceUpgrade: true
-  namespace: kube-system
-  version: 0.2.0
-# kube-state-metrics
-- appName: kube-state-metrics
-  chartName: kube-state-metrics-app
-  catalog: default
-  clusterValues:
-    configMap: true
-    secret: false
-  forceUpgrade: true
-  namespace: kube-system
-  version: 1.5.1
-# metrics-server
-- appName: metrics-server
-  chartName: metrics-server-app
-  catalog: default
-  clusterValues:
-    configMap: true
-    secret: false
-  forceUpgrade: true
-  namespace: kube-system
-  version: 1.5.0
-# net-exporter
-- appName: net-exporter
-  chartName: net-exporter
-  catalog: default
-  clusterValues:
-    configMap: true
-    secret: false
-  forceUpgrade: true
-  namespace: kube-system
-  version: 1.10.3
-# node-exporter
-- appName: node-exporter
-  chartName: node-exporter-app
-  catalog: default
-  clusterValues:
-    configMap: true
-    secret: false
-  forceUpgrade: true
-  namespace: kube-system
-  version: 1.8.0
+  # calico
+  - appName: calico
+    chartName: calico
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: false
+    namespace: kube-system
+    version: 0.2.1
+  # cert-exporter
+  - appName: cert-exporter
+    chartName: cert-exporter
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    version: 2.0.0
+  # cloud-provider-openstack
+  - appName: cloud-provider-openstack
+    chartName: cloud-provider-openstack-app
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: true
+    forceUpgrade: true
+    namespace: kube-system
+    version: 0.2.0
+  # kube-state-metrics
+  - appName: kube-state-metrics
+    chartName: kube-state-metrics-app
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    version: 1.5.1
+  # metrics-server
+  - appName: metrics-server
+    chartName: metrics-server-app
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    version: 1.5.0
+  # net-exporter
+  - appName: net-exporter
+    chartName: net-exporter
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    version: 1.10.3
+  # node-exporter
+  - appName: node-exporter
+    chartName: node-exporter-app
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    version: 1.8.0

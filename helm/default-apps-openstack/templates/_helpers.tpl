@@ -20,8 +20,6 @@ Common labels
 app-operator.giantswarm.io/version: 5.5.1
 app.kubernetes.io/name: {{ include "name" . }}
 app.kubernetes.io/instance: {{ .Release.Name | quote }}
-app.giantswarm.io/branch: {{ .Chart.Annotations.branch | replace "#" "-" | replace "/" "-" | replace "." "-" | trunc 63 | trimSuffix "-" | quote }}
-app.giantswarm.io/commit: {{ .Chart.Annotations.commit | quote }}
 app.kubernetes.io/managed-by: {{ .Release.Name | quote }}
 app.kubernetes.io/version: {{ .Chart.Version | quote }}
 helm.sh/chart: {{ include "chart" . | quote }}
