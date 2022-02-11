@@ -20,5 +20,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add apps to helm chart corresponding to OpenStack v20.0.0-alpha1 release.
 - Initialize repository from template.
 
-[unreleased]: https://github.com/giantswarm/default-apps-openstack/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-openstack/compare/v0.1.0...HEAD
 [0.1.0]: https://github.com/giantswarm/default-apps-openstack/releases/tag/v0.1.0
