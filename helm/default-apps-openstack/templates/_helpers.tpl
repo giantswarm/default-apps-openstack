@@ -29,20 +29,3 @@ giantswarm.io/cluster: {{ .Values.clusterName | quote }}
 giantswarm.io/organization: {{ .Values.organization | quote }}
 giantswarm.io/service-type: managed
 {{- end -}}
-
-{{- define "kubeconfig" -}}
-kubeConfig:
-  context:
-    name: {{ .Values.clusterName }}-admin@{{ .Values.clusterName }}
-  inCluster: false
-  secret:
-    name: {{ .Values.clusterName }}-kubeconfig
-    namespace: {{ .Release.Namespace }}
-{{- end -}}
-
-{{- define "config" -}}
-config:
-  configMap:
-    name: {{ .Values.clusterName }}-cluster-values
-    namespace: {{ .Release.Namespace }}
-{{- end -}}
