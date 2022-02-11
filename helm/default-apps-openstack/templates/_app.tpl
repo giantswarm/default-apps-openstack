@@ -31,6 +31,7 @@ spec:
       namespace: {{ .Release.Namespace }}
   {{- end }}
   {{- end }}
+  {{- end }}
   {{- with .userConfig }}
   {{- if or .configMap .secret }}
   userConfig:
@@ -43,6 +44,7 @@ spec:
     secret:
       name: {{ .Values.clusterName }}-user-values
       namespace: {{ .Release.Namespace }}
+  {{- end }}
   {{- end }}
   {{- end }}
   name: {{ .chartName }}
