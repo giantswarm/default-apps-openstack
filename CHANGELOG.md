@@ -10,7 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Upgrade `calico-app` to 0.2.1 to enable Felix metrics.
-- Upgrade `cloud-provider-openstack` to version 0.2.0
+- Upgrade `cloud-provider-openstack` to version 0.2.0.
+- Restrict provider to `openstack`.
 
 ## [0.1.0] - 2022-01-25
 

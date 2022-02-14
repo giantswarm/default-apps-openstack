@@ -6,3 +6,6 @@ home: https://github.com/giantswarm/default-apps-openstack
 version: 0.1.0
 annotations:
   application.giantswarm.io/team: "honeybadger"
+restrictions:
+  compatibleProviders:
+    - openstack
