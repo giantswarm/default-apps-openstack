@@ -66,8 +66,8 @@ metadata:
 data:
   {{- .configMap | toYaml | toString | nindent 2 }}
 {{- end }}
----
 {{- if .secret }}
+---
 apiVersion: v1
 kind: Secret
 metadata:
