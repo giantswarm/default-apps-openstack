@@ -14,3 +14,19 @@ spec:
   name: net-exporter
   namespace: kube-system
   version: 1.10.3-6972c2fc0b55628c5e53fa1a6d09078fd06b1e7e
+  userConfig:
+    configMap:
+      name: {{ .Values.clusterName }}-net-exporter-user-values
+      namespace: {{ .Release.Namespace }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    {{- include "labels.common" . | nindent 4 }}
+  name: {{ .Values.clusterName }}-net-exporter-user-values
+  namespace: {{ .Release.Namespace }}
+data:
+  values: |
+    dns:
+      service": "kube-dns"
