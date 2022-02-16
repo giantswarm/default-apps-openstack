@@ -17,7 +17,6 @@ Create chart name and version as used by the chart label.
 Common labels
 */}}
 {{- define "labels.common" -}}
-app-operator.giantswarm.io/version: 5.5.1
 app.kubernetes.io/name: {{ include "name" . }}
 app.kubernetes.io/instance: {{ .Release.Name | quote }}
 app.kubernetes.io/managed-by: {{ .Release.Name | quote }}
