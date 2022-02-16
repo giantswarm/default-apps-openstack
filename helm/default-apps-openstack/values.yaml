@@ -1,5 +1,6 @@
-clusterName: "test"
-organization: "org"
+clusterName: ""
+organization: ""
+managementCluster: ""
 
 apps:
   # calico
@@ -31,7 +32,7 @@ apps:
       secret: true
     forceUpgrade: true
     namespace: kube-system
-    version: 0.2.0
+    version: 0.2.2
   # kube-state-metrics
   - appName: kube-state-metrics
     chartName: kube-state-metrics-app
