@@ -8,12 +8,12 @@ metadata:
   name: {{ .Values.clusterName }}-net-exporter
   namespace: {{ .Release.Namespace }}
 spec:
-  catalog: default
+  catalog: default-test
   {{- include "kubeconfig" . | nindent 2 }}
   {{- include "config" . | nindent 2 }}
   name: net-exporter
   namespace: kube-system
-  version: 1.10.3
+  version: 1.10.3-5c94639513279e5657cbf9cc0f5f7da57d41107c
   userConfig:
     configMap:
       name: {{ .Values.clusterName }}-net-exporter-user-values
