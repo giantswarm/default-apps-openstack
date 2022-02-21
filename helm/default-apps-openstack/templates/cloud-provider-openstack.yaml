@@ -16,4 +16,25 @@ spec:
       namespace: {{ .Release.Namespace }}
   name: cloud-provider-openstack-app
   namespace: kube-system
-  version: 0.2.0
+  userConfig:
+    configMap:
+      name: {{ .Values.clusterName }}-cloud-provider-openstack-user-values
+      namespace: {{ .Release.Namespace }}
+  version: 0.2.2
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    {{- include "labels.common" . | nindent 4 }}
+  name: {{ .Values.clusterName }}-cloud-provider-openstack-user-values
+  namespace: {{ .Release.Namespace }}
+data:
+  values: |
+    openstack-cinder-csi:
+      clusterID: giant_swarm_cluster_{{ .Values.managementCluster }}_{{ .Values.clusterName }}
+    openstack-cloud-controller-manager:
+      controllerExtraArgs: |-
+        - --cluster-name=giant_swarm_cluster_{{ .Values.managementCluster }}_{{ .Values.clusterName }}
+
+
