@@ -22,7 +22,7 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
-    version: 2.0.0
+    version: 2.1.0
   cloudProviderOpenstack:
     appName: cloud-provider-openstack
     chartName: cloud-provider-openstack-app
