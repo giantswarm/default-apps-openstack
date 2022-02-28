@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add per-app userconfig ConfigMaps and Secrets so preinstalled apps can be configured.
 
+### Changed
+
+- Move app definitions to `values.yaml`.
+
 ## [0.1.1] - 2022-02-16
 
 ### Changed
@@ -19,7 +23,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgrade `cloud-provider-openstack` to version 0.2.2.
 - Restrict provider to `openstack`.
 - Pass cluster tag to cloud-provider-openstack apps.
-- Move app definitions to `values.yaml`.
 
 ## [0.1.0] - 2022-01-25
 
