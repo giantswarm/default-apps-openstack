@@ -22,7 +22,7 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
-    version: 2.0.0
+    version: 2.1.0
   cloudProviderOpenstack:
     appName: cloud-provider-openstack
     chartName: cloud-provider-openstack-app
@@ -42,7 +42,7 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
-    version: 1.5.1
+    version: 1.7.0
   metricsServer:
     appName: metrics-server
     chartName: metrics-server-app
@@ -52,7 +52,7 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
-    version: 1.5.0
+    version: 1.6.0
   netExporter:
     appName: net-exporter
     chartName: net-exporter
@@ -72,4 +72,4 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
-    version: 1.8.0
+    version: 1.9.0
