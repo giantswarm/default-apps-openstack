@@ -1,6 +1,7 @@
 {{- $clusterName := .Values.clusterName }}
 {{- $namespace := .Release.Namespace }}
 {{- range .Values.apps }}
+{{- $appName := .appName }}
 ---
 apiVersion: application.giantswarm.io/v1alpha1
 kind: App
@@ -40,12 +41,12 @@ spec:
   userConfig:
   {{- if .configMap }}
     configMap:
-      name: {{ $clusterName }}-{{ .appName }}-user-values
+      name: {{ $clusterName }}-{{ $appName }}-user-values
       namespace: {{ $namespace }}
   {{- end }}
   {{- if .secret }}
     secret:
-      name: {{ $clusterName }}-{{ .appName }}-user-values
+      name: {{ $clusterName }}-{{ $appName }}-user-values
       namespace: {{ $namespace }}
   {{- end }}
   {{- end }}
@@ -61,7 +62,7 @@ kind: ConfigMap
 metadata:
   labels:
     {{- include "labels.common" $ | nindent 4 }}
-  name: {{ $clusterName }}-{{ .appName }}-user-values
+  name: {{ $clusterName }}-{{ $appName }}-user-values
   namespace: {{ $namespace }}
 data:
   {{- .configMap | toYaml | toString | nindent 2 }}
@@ -73,7 +74,7 @@ kind: Secret
 metadata:
   labels:
     {{- include "labels.common" $ | nindent 4 }}
-  name: {{ $clusterName }}-{{ .appName }}-user-values
+  name: {{ $clusterName }}-{{ $appName }}-user-values
   namespace: {{ $namespace }}
 stringData:
   {{ .configMap | indent 2 }}
