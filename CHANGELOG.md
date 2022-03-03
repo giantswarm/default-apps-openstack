@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update `net-exporter` to solve conflicting port issue.
 - Set the DNS Service name to `kube-dns` for `net-exporter`.
 - Upgrade `calico-app` to 0.2.1 to enable Felix metrics.
-- Upgrade `cloud-provider-openstack` to version 0.2.0.
+- Upgrade `cloud-provider-openstack` to version 0.2.2.
 - Restrict provider to `openstack`.
 - Pass cluster tag to cloud-provider-openstack apps.
 
