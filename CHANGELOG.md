@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Set the DNS Service name to `kube-dns` for `net-exporter`.
+
 ### Added
 
 - Add per-app userconfig ConfigMaps and Secrets so preinstalled apps can be configured.

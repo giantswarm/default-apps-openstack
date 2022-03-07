@@ -2,7 +2,12 @@ clusterName: ""
 organization: ""
 managementCluster: ""
 
-userConfig: {}
+userConfig:
+  netExporter:
+    configMap:
+      data:
+        dns:
+          service": "kube-dns"
 
 apps:
   calico:
