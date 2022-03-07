@@ -50,7 +50,7 @@ spec:
   {{- end }}
   {{- end }}
   name: {{ .chartName }}
-  namespace: {{ $.Release.Namespace }}
+  namespace: {{ .namespace }}
   version: {{ .version }}
 {{- with (get $.Values.userConfig $key) }}
 {{- if .configMap }}
