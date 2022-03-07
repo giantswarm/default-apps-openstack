@@ -63,7 +63,7 @@ metadata:
   name: {{ $.Values.clusterName }}-{{ $appName }}-user-values
   namespace: {{ $.Release.Namespace }}
 data:
-  {{- .configMap | toYaml | toString | nindent 2 }}
+  {{- (tpl (.configMap | toYaml | toString) $) | nindent 2 }}
 {{- end }}
 {{- if .secret }}
 ---
@@ -75,7 +75,7 @@ metadata:
   name: {{ $.Values.clusterName }}-{{ $appName }}-user-values
   namespace: {{ $.Release.Namespace }}
 stringData:
-  {{ .secret | indent 2 }}
+  {{- (tpl (.secret | toYaml | toString) $) | nindent 2 }}
 {{- end }}
 {{- end }}
 {{- end -}}
