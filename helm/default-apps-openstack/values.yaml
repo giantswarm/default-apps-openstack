@@ -5,7 +5,7 @@ managementCluster: ""
 userConfig:
   netExporter:
     configMap:
-      data:
+      values: |
         dns:
           service: "kube-dns"
 
