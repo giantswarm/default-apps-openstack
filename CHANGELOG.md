@@ -18,6 +18,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Move app definitions to `values.yaml`.
+- Update `cert-exporter` from v2.0.0 to v2.1.0.
+- Update `kube-state-metrics` to v1.5.1 to v1.7.0.
+- Update `metrics-server` from v1.5.0 to v1.6.0.
+- Update `node-exporter` from v1.8.0 to v1.9.0.
 
 ## [0.1.1] - 2022-02-16
 
