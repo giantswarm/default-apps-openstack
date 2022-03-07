@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Move app definitions to `values.yaml`.
+- Move from `giantswarm-catalog` to `cluster-catalog`.
 
 ## [0.1.1] - 2022-02-16
 
