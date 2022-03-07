@@ -7,7 +7,7 @@ userConfig:
     configMap:
       data:
         dns:
-          service": "kube-dns"
+          service: "kube-dns"
 
 apps:
   calico:
