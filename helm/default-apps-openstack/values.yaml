@@ -48,6 +48,16 @@ apps:
     forceUpgrade: true
     namespace: kube-system
     version: 0.2.2
+  clusterResources:
+    appName: cluster-resources
+    chartName: cluster-resources-app
+    catalog: cluster
+    clusterValues:
+      configMap: false
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    version: 0.1.0
   kubeStateMetrics:
     appName: kube-state-metrics
     chartName: kube-state-metrics-app
