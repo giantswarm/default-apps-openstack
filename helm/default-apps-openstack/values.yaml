@@ -18,16 +18,16 @@ userConfig:
           service: kube-dns
 
 apps:
-  calico:
-    appName: calico
-    chartName: calico
-    catalog: default
+  cilium:
+    appName: cilium
+    chartName: cilium
+    catalog: default-test
     clusterValues:
-      configMap: true
+      configMap: false
       secret: false
     forceUpgrade: false
     namespace: kube-system
-    version: 0.2.1
+    version: 1.11.2
   certExporter:
     appName: cert-exporter
     chartName: cert-exporter
