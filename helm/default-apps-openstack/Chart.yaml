@@ -4,7 +4,7 @@ description: A Helm chart defining the preinstalled apps running in all Giant Sw
 home: https://github.com/giantswarm/default-apps-openstack
 version: 0.1.0
 annotations:
-  application.giantswarm.io/team: "honeybadger"
+  application.giantswarm.io/team: "rocket"
 restrictions:
   compatibleProviders:
     - openstack

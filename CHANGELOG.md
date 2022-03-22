@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add `giantswarm.io/managed-by` label so apps are accepted by `app-admission-controller`.
+
 ### Changed
 
 - Move from `giantswarm-catalog` to `cluster-catalog`.
