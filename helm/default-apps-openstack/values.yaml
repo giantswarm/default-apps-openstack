@@ -3,6 +3,11 @@ organization: ""
 managementCluster: ""
 
 userConfig:
+  cilium:
+    configMap:
+      values: |
+        # Disable network policies for the time being.
+        policyEnforcementMode: "never"
   cloudProviderOpenstack:
     configMap:
       values: |
