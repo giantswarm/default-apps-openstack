@@ -49,7 +49,7 @@ apps:
     namespace: kube-system
     version: 0.2.2
   clusterResources:
-    appName:cluster-resources
+    appName: cluster-resources
     chartName: cluster-resources
     catalog: default-test
     clusterValues:
