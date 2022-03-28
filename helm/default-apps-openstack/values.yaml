@@ -18,26 +18,26 @@ userConfig:
           service: kube-dns
 
 apps:
-  calico:
-    appName: calico
-    chartName: calico
+  certExporter:
+    appName: cert-exporter
+    chartName: cert-exporter
+    catalog: default
+    clusterValues:
+      configMap: false
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    version: 2.1.0
+  cilium:
+    appName: cilium
+    chartName: cilium
     catalog: default
     clusterValues:
       configMap: true
       secret: false
     forceUpgrade: false
     namespace: kube-system
-    version: 0.2.1
-  certExporter:
-    appName: cert-exporter
-    chartName: cert-exporter
-    catalog: default
-    clusterValues:
-      configMap: true
-      secret: false
-    forceUpgrade: true
-    namespace: kube-system
-    version: 2.1.0
+    version: 0.1.0
   cloudProviderOpenstack:
     appName: cloud-provider-openstack
     chartName: cloud-provider-openstack-app
@@ -48,6 +48,16 @@ apps:
     forceUpgrade: true
     namespace: kube-system
     version: 0.2.2
+  clusterResources:
+    appName:cluster-resources
+    chartName: cluster-resources
+    catalog: default-test
+    clusterValues:
+      configMap: false
+      secret: false
+    forceUpgrade: false
+    namespace: kube-system
+    version: 0.0.0-a94c7ce362d307cb606f447bb1ab1f136f318f66
   kubeStateMetrics:
     appName: kube-state-metrics
     chartName: kube-state-metrics-app
