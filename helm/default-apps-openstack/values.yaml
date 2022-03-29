@@ -51,13 +51,13 @@ apps:
   clusterResources:
     appName: cluster-resources
     chartName: cluster-resources
-    catalog: default-test
+    catalog: default
     clusterValues:
       configMap: false
       secret: false
     forceUpgrade: false
     namespace: kube-system
-    version: 0.0.0-a94c7ce362d307cb606f447bb1ab1f136f318f66
+    version: 0.1.0
   kubeStateMetrics:
     appName: kube-state-metrics
     chartName: kube-state-metrics-app
