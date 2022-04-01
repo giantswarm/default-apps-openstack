@@ -7,10 +7,10 @@ userConfig:
     configMap:
       values: |
         openstack-cinder-csi:
-          clusterID: giant_swarm_cluster_{{ .Values.managementCluster }}_{{ .Values.clusterName }}
+          clusterID: giant_swarm_cluster_{{ .Values.managementCluster.name }}_{{ .Values.clusterName }}
         openstack-cloud-controller-manager:
           controllerExtraArgs: |-
-            - --cluster-name=giant_swarm_cluster_{{ .Values.managementCluster }}_{{ .Values.clusterName }}
+            - --cluster-name=giant_swarm_cluster_{{ .Values.managementCluster.name }}_{{ .Values.clusterName }}
   netExporter:
     configMap:
       values: |
