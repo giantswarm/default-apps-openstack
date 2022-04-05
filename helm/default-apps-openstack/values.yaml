@@ -3,6 +3,10 @@ organization: ""
 managementCluster: ""
 
 userConfig:
+  cilium:
+    configMap:
+      values: |
+        policyEnforcementMode: never
   cloudProviderOpenstack:
     configMap:
       values: |
@@ -48,16 +52,6 @@ apps:
     forceUpgrade: true
     namespace: kube-system
     version: 0.4.0
-  clusterResources:
-    appName: cluster-resources
-    chartName: cluster-resources
-    catalog: default-test
-    clusterValues:
-      configMap: false
-      secret: false
-    forceUpgrade: true
-    namespace: kube-system
-    version: 0.1.0-a904b9f6c455f1104b31d1907d8795a9728e2d6b
   kubeStateMetrics:
     appName: kube-state-metrics
     chartName: kube-state-metrics-app
