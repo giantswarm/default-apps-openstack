@@ -16,6 +16,11 @@ userConfig:
       values: |
         dns:
           service: kube-dns
+  nodeExporter:
+    configMap:
+      values: |
+        disableConntrackCollector: true
+        disableNvmeCollector: true
 
 apps:
   certExporter:
@@ -97,4 +102,4 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
-    version: 1.9.0
+    version: 1.11.0
