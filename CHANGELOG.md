@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.0] - 2022-04-07
+
 ### Changed
 
 - Upgrade `node-exporter` to version `1.11.0` and disable `nvme` and `conntrack` collectors that don't work with latest ubuntu images.
@@ -61,7 +63,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add apps to helm chart corresponding to OpenStack v20.0.0-alpha1 release.
 - Initialize repository from template.
 
-[Unreleased]: https://github.com/giantswarm/default-apps-openstack/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-openstack/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/giantswarm/default-apps-openstack/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/giantswarm/default-apps-openstack/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/giantswarm/default-apps-openstack/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/giantswarm/default-apps-openstack/compare/v0.1.1...v0.2.0
