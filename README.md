@@ -2,6 +2,8 @@
 
 # default-apps-openstack chart
 
+Hey
+
 Giant Swarm offers a default-apps-openstack App including the apps pre-installed in all OpenStack workload clusters.
 Here we define the default-apps-openstack chart with its templates and default configuration.
 
