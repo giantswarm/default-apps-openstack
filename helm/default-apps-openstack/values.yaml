@@ -46,13 +46,13 @@ apps:
   cloudProviderOpenstack:
     appName: cloud-provider-openstack
     chartName: cloud-provider-openstack-app
-    catalog: default-test
+    catalog: default
     clusterValues:
       configMap: true
       secret: true
     forceUpgrade: true
     namespace: kube-system
-    version: 0.4.0-63bca58769548f12db5bec601e0ff272055ed53c
+    version: 0.5.0
   clusterResources:
     appName: cluster-resources
     chartName: cluster-resources
@@ -66,13 +66,13 @@ apps:
   csiExternalSnapshotter:
     appName: csi-external-snapshotter
     chartName: csi-external-snapshotter-app
-    catalog: default-test
+    catalog: default
     clusterValues:
       configMap: false
       secret: false
     forceUpgrade: false
     namespace: kube-system
-    version: 0.0.0-62871489f7a8bfb736145e958e96fdc837af3799
+    version: 0.1.0
   kubeStateMetrics:
     appName: kube-state-metrics
     chartName: kube-state-metrics-app
