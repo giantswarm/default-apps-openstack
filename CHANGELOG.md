@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add `csi-external-snapshotter` app to be able to create volumesnapshots.
 - Upgrade `cloud-provider-openstack` to `0.5.0` to create default `volumesnapshotclass`. 
+- Add `cert-manager` app and update `csi-external-snapshotter` to use validating webhooks.
 
 ## [0.5.0] - 2022-04-07
 

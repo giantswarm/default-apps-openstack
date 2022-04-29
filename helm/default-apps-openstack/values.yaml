@@ -33,6 +33,16 @@ apps:
     forceUpgrade: true
     namespace: kube-system
     version: 2.1.0
+  certManager:
+    appName: cert-manager
+    chartName: cert-manager-app
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    version: 2.13.0
   cilium:
     appName: cilium
     chartName: cilium
@@ -66,13 +76,13 @@ apps:
   csiExternalSnapshotter:
     appName: csi-external-snapshotter
     chartName: csi-external-snapshotter-app
-    catalog: default
+    catalog: default-test
     clusterValues:
       configMap: false
       secret: false
     forceUpgrade: false
     namespace: kube-system
-    version: 0.1.0
+    version: 0.1.0-d74b674b26d2439fd40c34113acd78ace8e0ceb1
   kubeStateMetrics:
     appName: kube-state-metrics
     chartName: kube-state-metrics-app
