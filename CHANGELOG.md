@@ -23,7 +23,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Upgrade `node-exporter` to version `1.11.0` and disable `nvme` and `conntrack` collectors that don't work with latest ubuntu images.
-- Upgrade `cloud-provider-openstack` to version `0.6.0`.
 
 ## [0.4.0] - 2022-04-01
 
