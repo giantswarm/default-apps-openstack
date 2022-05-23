@@ -11,13 +11,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add `csi-external-snapshotter` app to be able to create volumesnapshots.
 - Upgrade `cloud-provider-openstack` to `0.5.0` to create default `volumesnapshotclass`. 
-- Add `cert-manager` app and update `csi-external-snapshotter` to use validating webhooks.
+- Add `cert-manager` app in order to use validating webhooks.
+
+### Changed
+
+- Upgrade `cloud-provider-openstack` to version `0.6.0`.
+- Upgrade `csi-external-snapshotter` to version `0.2.0`.
 
 ## [0.5.0] - 2022-04-07
 
 ### Changed
 
 - Upgrade `node-exporter` to version `1.11.0` and disable `nvme` and `conntrack` collectors that don't work with latest ubuntu images.
+- Upgrade `cloud-provider-openstack` to version `0.6.0`.
 
 ## [0.4.0] - 2022-04-01
 
