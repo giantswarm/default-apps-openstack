@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Update cloud-provider-openstack-app to 0.6.1 for removed ca-certs mount.
+
 ## [0.6.0] - 2022-05-23
 
 ### Added
