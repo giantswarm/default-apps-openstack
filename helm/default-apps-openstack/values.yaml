@@ -56,13 +56,13 @@ apps:
   cloudProviderOpenstack:
     appName: cloud-provider-openstack
     chartName: cloud-provider-openstack-app
-    catalog: default
+    catalog: default-test
     clusterValues:
       configMap: true
       secret: true
     forceUpgrade: true
     namespace: kube-system
-    version: 0.6.1
+    version: 0.6.1-f2c8d7d860b56746a03814a48de588a8af4a2c1b
   clusterResources:
     appName: cluster-resources
     chartName: cluster-resources
