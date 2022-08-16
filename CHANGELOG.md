@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Update kube-state-metrics to 1.11.0 to fix team label for monitoring purposes.
+
 ## [0.6.1] - 2022-06-27
 
 ### Fixed
@@ -18,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add `csi-external-snapshotter` app to be able to create volumesnapshots.
-- Upgrade `cloud-provider-openstack` to `0.5.0` to create default `volumesnapshotclass`. 
+- Upgrade `cloud-provider-openstack` to `0.5.0` to create default `volumesnapshotclass`.
 - Add `cert-manager` app in order to use validating webhooks.
 
 ### Changed
