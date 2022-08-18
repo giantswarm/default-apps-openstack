@@ -16,6 +16,17 @@ Create chart name and version as used by the chart label.
 {{/*
 Common labels
 */}}
+{{/*
+This line is to make linter happy. Norally we would include team label in the
+common labels but since those apps are owned by different teams it doesn't make
+sense in this instance.
+
+Example failing build:
+https://app.circleci.com/pipelines/github/giantswarm/default-apps-openstack/248/workflows/462c0ffa-3731-4b98-a808-55b53704fbd3/jobs/252
+
+Line to make linter happy (normally included in "labels.common"):
+application.giantswarm.io/team: {{ index .Chart.Annotations "application.giantswarm.io/team" | quote }}
+*/}}
 {{- define "labels.common" -}}
 app.kubernetes.io/name: {{ include "name" . }}
 app.kubernetes.io/instance: {{ .Release.Name | quote }}
