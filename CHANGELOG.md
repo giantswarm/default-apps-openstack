@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.6.4] - 2022-08-17
 
+### Changed
+
+- Update `cert-manger` to 2.15.2.
+
 ## [0.6.3] - 2022-08-17
 
 ### Fixed
