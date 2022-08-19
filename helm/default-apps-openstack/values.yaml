@@ -42,7 +42,7 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
-    version: 2.13.0
+    version: 2.15.2
   cilium:
     appName: cilium
     chartName: cilium
@@ -62,7 +62,7 @@ apps:
       secret: true
     forceUpgrade: true
     namespace: kube-system
-    version: 0.6.1
+    version: 0.6.2
   clusterResources:
     appName: cluster-resources
     chartName: cluster-resources
@@ -92,7 +92,7 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
-    version: 1.7.0
+    version: 1.11.0
   metricsServer:
     appName: metrics-server
     chartName: metrics-server-app

@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.4] - 2022-08-17
+
+### Changed
+
+- Update `cert-manger` to 2.15.2.
+
+## [0.6.3] - 2022-08-17
+
+### Fixed
+
+- Bump `openstack-cloud-controller-manager` version to `0.6.2` to bring fixes.
+
+## [0.6.2] - 2022-08-16
+
+### Fixed
+
+- Update kube-state-metrics to 1.11.0 to fix team label for monitoring purposes.
+
 ## [0.6.1] - 2022-06-27
 
 ### Fixed
@@ -18,7 +36,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add `csi-external-snapshotter` app to be able to create volumesnapshots.
-- Upgrade `cloud-provider-openstack` to `0.5.0` to create default `volumesnapshotclass`. 
+- Upgrade `cloud-provider-openstack` to `0.5.0` to create default `volumesnapshotclass`.
 - Add `cert-manager` app in order to use validating webhooks.
 
 ### Changed
@@ -82,7 +100,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add apps to helm chart corresponding to OpenStack v20.0.0-alpha1 release.
 - Initialize repository from template.
 
-[Unreleased]: https://github.com/giantswarm/default-apps-openstack/compare/v0.6.1...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-openstack/compare/v0.6.4...HEAD
+[0.6.4]: https://github.com/giantswarm/default-apps-openstack/compare/v0.6.3...v0.6.4
+[0.6.3]: https://github.com/giantswarm/default-apps-openstack/compare/v0.6.2...v0.6.3
+[0.6.2]: https://github.com/giantswarm/default-apps-openstack/compare/v0.6.1...v0.6.2
 [0.6.1]: https://github.com/giantswarm/default-apps-openstack/compare/v0.6.0...v0.6.1
 [0.6.0]: https://github.com/giantswarm/default-apps-openstack/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/giantswarm/default-apps-openstack/compare/v0.4.0...v0.5.0
