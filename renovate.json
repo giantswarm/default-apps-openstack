@@ -17,8 +17,7 @@
   "regexManagers": [
     {
       "fileMatch": ["^helm\\/.+\\/values\\.yaml$"],
-      "matchStrings": ["appName: (?<appName>.*)\n(.|\n)+?version: (?<currentValue>.*?)\n"],
-      "depNameTemplate": "giantswarm/{{{appName}}}",
+      "matchStrings": ["repo: (?<depName>.*)\n(\\s)*version: (?<currentValue>.*?)\n"],
       "datasourceTemplate": "github-releases",
       "extractVersionTemplate": "^v(?<version>.*)$"
     }
