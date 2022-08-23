@@ -17,8 +17,8 @@
   "regexManagers": [
     {
       "fileMatch": ["^helm\\/default-apps-openstack\\/values\\.yaml$"],
-      "matchStrings": ["appName: cert-exporter(.|\n)+?version: (?<currentValue>.*?)\n"],
-      "depNameTemplate": "giantswarm/cert-exporter",
+      "matchStrings": ["appName: (?<appName>.*?)(.|\n)+?version: (?<currentValue>.*?)\n"],
+      "depNameTemplate": "giantswarm/{{appName}}",
       "datasourceTemplate": "github-releases",
       "extractVersionTemplate": "^v(?<version>.*)$"
     }
