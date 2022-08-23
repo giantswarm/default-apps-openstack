@@ -46,7 +46,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-manager-app
-    version: 2.15.2
+    version: 2.15.3
   cilium:
     appName: cilium
     chartName: cilium
