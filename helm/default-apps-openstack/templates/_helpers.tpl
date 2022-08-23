@@ -17,7 +17,7 @@ Create chart name and version as used by the chart label.
 Common labels
 */}}
 {{/*
-This line is to make linter happy. Norally we would include team label in the
+This line is to make linter happy. Normally we would include team label in the
 common labels but since those apps are owned by different teams it doesn't make
 sense in this instance.
 
