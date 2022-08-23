@@ -32,6 +32,8 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/cert-exporter
     version: 2.1.0
   certManager:
     appName: cert-manager
@@ -42,6 +44,8 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/cert-manager-app
     version: 2.15.2
   cilium:
     appName: cilium
@@ -52,6 +56,8 @@ apps:
       secret: false
     forceUpgrade: false
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/cilium-app
     version: 0.1.0
   cloudProviderOpenstack:
     appName: cloud-provider-openstack
@@ -62,6 +68,8 @@ apps:
       secret: true
     forceUpgrade: true
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/cloud-provider-openstack-app
     version: 0.6.2
   clusterResources:
     appName: cluster-resources
@@ -72,6 +80,8 @@ apps:
       secret: false
     forceUpgrade: false
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/cluster-resources-app
     version: 0.1.0
   csiExternalSnapshotter:
     appName: csi-external-snapshotter
@@ -82,6 +92,8 @@ apps:
       secret: false
     forceUpgrade: false
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/csi-external-snapshotter-app
     version: 0.2.0
   kubeStateMetrics:
     appName: kube-state-metrics
@@ -92,6 +104,8 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/kube-state-metrics-app
     version: 1.11.0
   metricsServer:
     appName: metrics-server
@@ -102,6 +116,8 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/metrics-server-app
     version: 1.6.0
   netExporter:
     appName: net-exporter
@@ -112,6 +128,8 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/net-exporter
     version: 1.10.3
   nodeExporter:
     appName: node-exporter
@@ -122,4 +140,6 @@ apps:
       secret: false
     forceUpgrade: true
     namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/node-exporter
     version: 1.11.0

@@ -16,9 +16,9 @@
   ],
   "regexManagers": [
     {
-      "fileMatch": ["^helm\\/default-apps-openstack\\/values\\.yaml$"],
-      "matchStrings": ["chartName: (?<chartName>.*)\n(.|\n)+?version: (?<currentValue>.*?)\n"],
-      "depNameTemplate": "giantswarm/{{{chartName}}}",
+      "fileMatch": ["^helm\\/.+\\/values\\.yaml$"],
+      "matchStrings": ["appName: (?<appName>.*)\n(.|\n)+?version: (?<currentValue>.*?)\n"],
+      "depNameTemplate": "giantswarm/{{{appName}}}",
       "datasourceTemplate": "github-releases",
       "extractVersionTemplate": "^v(?<version>.*)$"
     }
