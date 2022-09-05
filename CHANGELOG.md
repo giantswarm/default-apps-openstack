@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add `coredns` app to be able to configure coredns configuration via app platform.
+
 ## [0.6.5] - 2022-09-19
 
 ### Changed
