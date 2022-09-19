@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update `cert-manager-app` from `2.15.2` to `2.15.3`.
 - Update `cilium-app` from `0.1.0` to `0.2.6`.
 - Update `metrics-server-app` from `1.6.0` to `1.8.0`. 
+- Update `cluster-resources-app` from `0.1.0` to `0.1.1`.
 
 ## [0.6.4] - 2022-08-17
 
