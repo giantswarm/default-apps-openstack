@@ -2,7 +2,7 @@ apiVersion: v2
 name: default-apps-openstack
 description: A Helm chart defining the preinstalled apps running in all Giant Swarm OpenStack clusters.
 home: https://github.com/giantswarm/default-apps-openstack
-version: 0.1.0
+version: 0.6.5
 annotations:
   application.giantswarm.io/team: "rocket"
 restrictions:
