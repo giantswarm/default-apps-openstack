@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Use `coredns.svc.kube-system` as monitoring target for `net-operator`
+
 ## [0.7.0] - 2022-09-19
 
 ### Added

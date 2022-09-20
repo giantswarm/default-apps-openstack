@@ -11,11 +11,6 @@ userConfig:
         openstack-cloud-controller-manager:
           controllerExtraArgs: |-
             - --cluster-name=giant_swarm_cluster_{{ .Values.managementCluster }}_{{ .Values.clusterName }}
-  netExporter:
-    configMap:
-      values: |
-        dns:
-          service: kube-dns
   nodeExporter:
     configMap:
       values: |
