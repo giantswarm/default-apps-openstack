@@ -11,11 +11,6 @@ userConfig:
         openstack-cloud-controller-manager:
           controllerExtraArgs: |-
             - --cluster-name=giant_swarm_cluster_{{ .Values.managementCluster }}_{{ .Values.clusterName }}
-  netExporter:
-    configMap:
-      values: |
-        dns:
-          service: kube-dns
   nodeExporter:
     configMap:
       values: |
@@ -83,6 +78,18 @@ apps:
     # used by renovate
     # repo: giantswarm/cluster-resources-app
     version: 0.1.1
+  coreDNS:
+    appName: coredns
+    chartName: coredns-app
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: true
+    namespace: kube-system
+    # used by renovate
+    # repo: giantswarm/coredns-app
+    version: 1.11.0
   csiExternalSnapshotter:
     appName: csi-external-snapshotter
     chartName: csi-external-snapshotter-app

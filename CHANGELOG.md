@@ -11,6 +11,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Disabled force upgrade for `cert-manager`. It causes messed up installations because the initial install times out as there are usually no ready nodes in this case at that time. Forcing the upgrade possibly deletes an already running installation as Helm default timeout is 5 mins and `chart-operator` stops waiting for the status after 2 mins, leaving the install process running and marking the release as pending.
 
+## [0.7.1] - 2022-09-20
+
+- Use `coredns.svc.kube-system` as monitoring target for `net-operator`
+
+## [0.7.0] - 2022-09-19
+
+### Added
+
+- Add `coredns` app to be able to configure coredns configuration via app platform.
+
 ## [0.6.5] - 2022-09-19
 
 ### Changed
@@ -114,7 +124,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add apps to helm chart corresponding to OpenStack v20.0.0-alpha1 release.
 - Initialize repository from template.
 
-[Unreleased]: https://github.com/giantswarm/default-apps-openstack/compare/v0.6.5...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-openstack/compare/v0.7.1...HEAD
+[0.7.1]: https://github.com/giantswarm/default-apps-openstack/compare/v0.7.0...v0.7.1
+[0.7.0]: https://github.com/giantswarm/default-apps-openstack/compare/v0.6.5...v0.7.0
 [0.6.5]: https://github.com/giantswarm/default-apps-openstack/compare/v0.6.4...v0.6.5
 [0.6.4]: https://github.com/giantswarm/default-apps-openstack/compare/v0.6.3...v0.6.4
 [0.6.3]: https://github.com/giantswarm/default-apps-openstack/compare/v0.6.2...v0.6.3
