@@ -5,6 +5,7 @@ home: https://github.com/giantswarm/default-apps-openstack
 version: 0.7.2
 annotations:
   application.giantswarm.io/team: "rocket"
+  application.giantswarm.io/app-type: "bundle"
 restrictions:
   compatibleProviders:
     - openstack
