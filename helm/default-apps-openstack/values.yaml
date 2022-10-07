@@ -93,7 +93,7 @@ apps:
   csiExternalSnapshotter:
     appName: csi-external-snapshotter
     chartName: csi-external-snapshotter-app
-    catalog: default
+    catalog: default-test
     clusterValues:
       configMap: false
       secret: false
@@ -101,7 +101,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/csi-external-snapshotter-app
-    version: 0.2.0
+    version: 0.2.0-75e22d008591d0fcba8bfe74c3f2ad48848f501e
   kubeStateMetrics:
     appName: kube-state-metrics
     chartName: kube-state-metrics
