@@ -69,7 +69,7 @@ apps:
   clusterResources:
     appName: cluster-resources
     chartName: cluster-resources
-    catalog: default-test
+    catalog: default
     clusterValues:
       configMap: false
       secret: false
