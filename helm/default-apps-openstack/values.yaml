@@ -83,7 +83,7 @@ apps:
   clusterResources:
     appName: cluster-resources
     chartName: cluster-resources
-    catalog: default-test
+    catalog: default
     clusterValues:
       configMap: false
       secret: false
@@ -91,7 +91,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cluster-resources-app
-    version: 0.1.1-13f9d1776ec00b146fc7a357bdd05b0d63e065a5
+    version: 0.1.1
   coreDNS:
     appName: coredns
     chartName: coredns-app
@@ -115,7 +115,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/csi-external-snapshotter-app
-    version: 0.2.0-75e22d008591d0fcba8bfe74c3f2ad48848f501e
+    version: 0.2.0-13f9d1776ec00b146fc7a357bdd05b0d63e065a5
   kubeStateMetrics:
     appName: kube-state-metrics
     chartName: kube-state-metrics
