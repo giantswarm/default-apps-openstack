@@ -77,7 +77,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cluster-resources-app
-    version: 0.1.1-ca3ec63b7b263f8501ffaea2eccf0c3a0cc030f0
+    version: 0.1.1
   coreDNS:
     appName: coredns
     chartName: coredns-app
