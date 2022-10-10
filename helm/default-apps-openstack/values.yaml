@@ -16,7 +16,7 @@ userConfig:
       values: |
         disableConntrackCollector: true
         disableNvmeCollector: true
- 
+
   csiExternalSnapshotter:
     configMap:
       values: |
@@ -30,7 +30,7 @@ userConfig:
               snapshot.storage.kubernetes.io/is-default-class: "true"
           driver: cinder.csi.openstack.org
           deletionPolicy: Delete
-      
+
 apps:
   certExporter:
     appName: cert-exporter
