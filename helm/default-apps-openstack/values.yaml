@@ -83,7 +83,7 @@ apps:
   clusterResources:
     appName: cluster-resources
     chartName: cluster-resources
-    catalog: default
+    catalog: default-test
     clusterValues:
       configMap: false
       secret: false
@@ -91,7 +91,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cluster-resources-app
-    version: 0.1.1
+    version: 0.1.1-13f9d1776ec00b146fc7a357bdd05b0d63e065a5
   coreDNS:
     appName: coredns
     chartName: coredns-app
