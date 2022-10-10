@@ -33,7 +33,7 @@ apps:
   certManager:
     appName: cert-manager
     chartName: cert-manager-app
-    catalog: default-test
+    catalog: default
     clusterValues:
       configMap: true
       secret: false
@@ -41,7 +41,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-manager-app
-    version: 2.17.0-935f68f554b4b285f7e8aab718d09dff5eac5fe1
+    version: 2.17.0
   cilium:
     appName: cilium
     chartName: cilium
