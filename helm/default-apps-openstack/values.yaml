@@ -16,11 +16,12 @@ userConfig:
       values: |
         disableConntrackCollector: true
         disableNvmeCollector: true
-  cilium:
+  csiExternalSnapshotter:
     configMap:
       values: |
-        defaultPolicies:
-          enabled: true
+        create: true
+        name: "csi-cinder-snapclass"
+        driver: "cinder.csi.openstack.org"
 
 apps:
   certExporter:
@@ -58,7 +59,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cilium-app
-    version: 0.3.1
+    version: 0.2.6
   cloudProviderOpenstack:
     appName: cloud-provider-openstack
     chartName: cloud-provider-openstack-app
@@ -106,7 +107,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/csi-external-snapshotter-app
-    version: 0.2.0-13f9d1776ec00b146fc7a357bdd05b0d63e065a5
+    version: 0.2.0-a64e4c4edb8a45835fb644b48c704f906bc5694f
   kubeStateMetrics:
     appName: kube-state-metrics
     chartName: kube-state-metrics
