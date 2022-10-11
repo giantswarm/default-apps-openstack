@@ -18,7 +18,7 @@ userConfig:
         disableNvmeCollector: true
   cilium:
     configMap:
-      values: |
+      values: |
         defaultPolicies:
           enabled: true
   
