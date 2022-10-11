@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Update `cert-manager-app` from `2.15.2` to `2.17.1`.
+- Update `cloud-provider-openstack-app` from `0.6.2` to `0.7.0`.
+- Update `csi-external-snapshotter-app` from `0.2.0` to `0.3.0`.
+- Change `csi-external-snapshotter-app` config for default `VolumeSnapshotClass`.
+
 ### Added
 
 - Added `application.giantswarm.io/app-type: "bundle"` annotation
