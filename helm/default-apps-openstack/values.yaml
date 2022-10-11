@@ -73,7 +73,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cloud-provider-openstack-app
-    version: 0.6.2-bc9fe1b6e5d023a5b536d3d13f0777877dfafb13
+    version: 0.6.2-e8b041cc2adca3a089136604a60a11a83318fdd2
   clusterResources:
     appName: cluster-resources
     chartName: cluster-resources
@@ -109,7 +109,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/csi-external-snapshotter-app
-    version: 0.2.0-a64e4c4edb8a45835fb644b48c704f906bc5694f
+    version: 0.2.0-2530eaa5bc92c98e302a0d3a65921f4da40efd4b
   kubeStateMetrics:
     appName: kube-state-metrics
     chartName: kube-state-metrics
