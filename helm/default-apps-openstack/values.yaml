@@ -19,9 +19,11 @@ userConfig:
   csiExternalSnapshotter:
     configMap:
       values: |
-        create: true
-        name: "csi-cinder-snapclass"
-        driver: "cinder.csi.openstack.org"
+        defaults:
+          volumesnapshotclass:
+            create: true
+            name: "csi-cinder-snapclass"
+            driver: "cinder.csi.openstack.org"
 
 apps:
   certExporter:
