@@ -65,7 +65,7 @@ apps:
   cloudProviderOpenstack:
     appName: cloud-provider-openstack
     chartName: cloud-provider-openstack-app
-    catalog: default-test
+    catalog: default
     clusterValues:
       configMap: true
       secret: true
@@ -73,7 +73,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cloud-provider-openstack-app
-    version: 0.6.2-e8b041cc2adca3a089136604a60a11a83318fdd2
+    version: 0.7.0
   clusterResources:
     appName: cluster-resources
     chartName: cluster-resources
@@ -101,7 +101,7 @@ apps:
   csiExternalSnapshotter:
     appName: csi-external-snapshotter
     chartName: csi-external-snapshotter-app
-    catalog: default-test
+    catalog: default
     clusterValues:
       configMap: false
       secret: false
@@ -109,7 +109,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/csi-external-snapshotter-app
-    version: 0.2.0-2530eaa5bc92c98e302a0d3a65921f4da40efd4b
+    version: 0.3.0
   kubeStateMetrics:
     appName: kube-state-metrics
     chartName: kube-state-metrics
