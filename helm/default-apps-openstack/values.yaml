@@ -158,3 +158,16 @@ apps:
     # used by renovate
     # repo: giantswarm/node-exporter-app
     version: 1.13.0
+  observability-bundle:
+    appName: observability-bundle
+    chartName: observability-bundle
+    catalog: default
+    clusterValues:
+      configMap: true
+      secret: false
+    forceUpgrade: false
+    namespace: ""
+    inCluster: true
+    # used by renovate
+    # repo: giantswarm/observability-bundle
+    version: 0.1.2
