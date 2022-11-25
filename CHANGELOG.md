@@ -11,6 +11,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Update `node-exporter-app` from `0.11.0` to `0.13.0`
 
+### Added
+
+- Add observability-bundle
+- Supports installing an app bundle
+
 ## [0.7.3] - 2022-10-11
 
 ### Changed
