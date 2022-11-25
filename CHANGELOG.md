@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.8.0] - 2022-11-25
+
 ### Changed
 
 - Update `node-exporter-app` from `0.11.0` to `0.13.0`
@@ -148,7 +150,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add apps to helm chart corresponding to OpenStack v20.0.0-alpha1 release.
 - Initialize repository from template.
 
-[Unreleased]: https://github.com/giantswarm/default-apps-openstack/compare/v0.7.3...HEAD
+[Unreleased]: https://github.com/giantswarm/default-apps-openstack/compare/v0.8.0...HEAD
+[0.8.0]: https://github.com/giantswarm/default-apps-openstack/compare/v0.7.3...v0.8.0
 [0.7.3]: https://github.com/giantswarm/default-apps-openstack/compare/v0.7.2...v0.7.3
 [0.7.2]: https://github.com/giantswarm/default-apps-openstack/compare/v0.7.1...v0.7.2
 [0.7.1]: https://github.com/giantswarm/default-apps-openstack/compare/v0.7.0...v0.7.1
