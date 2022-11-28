@@ -61,7 +61,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cilium-app
-    version: 0.2.6
+    version: 0.6.1
   cloudProviderOpenstack:
     appName: cloud-provider-openstack
     chartName: cloud-provider-openstack-app
