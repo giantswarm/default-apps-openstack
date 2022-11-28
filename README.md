@@ -26,6 +26,19 @@ There are 3 ways to install this app onto a workload cluster.
 
 ```
 
+## Upgrade
+
+### to 0.8.x
+
+If you run prometheus-operator and you want to upgrade to 0.8.x,
+you need to upgrade prometheus-operator before upgrading the cluster:
+
+* Upgrade prometheus-operator-crd to v2.0.1
+
+* Upgrade prometheus-operator-app to v2.0.1
+
+If you notice anything wrong, please open a support thread.
+
 ### Sample App CR and ConfigMap for the management cluster
 If you have access to the Kubernetes API on the management cluster, you could create
 the App CR and ConfigMap directly.
