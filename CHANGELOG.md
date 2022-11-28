@@ -15,7 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add observability-bundle
+- Add observability-bundle, PLEASE Check [Upgrade Notes](https://github.com/giantswarm/default-apps-openstack/tree/main#to-08x)
+
 - Supports installing an app bundle
 
 ## [0.7.3] - 2022-10-11
