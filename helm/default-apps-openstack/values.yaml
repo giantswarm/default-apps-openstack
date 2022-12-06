@@ -158,7 +158,7 @@ apps:
     # used by renovate
     # repo: giantswarm/node-exporter-app
     version: 1.13.0
-  observability-bundle:
+  observabilityBundle:
     appName: observability-bundle
     chartName: observability-bundle
     catalog: default
@@ -166,7 +166,7 @@ apps:
       configMap: true
       secret: false
     forceUpgrade: false
-    namespace: ""
+    namespace: kube-system
     inCluster: true
     # used by renovate
     # repo: giantswarm/observability-bundle
