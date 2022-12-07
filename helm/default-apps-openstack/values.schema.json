@@ -402,10 +402,10 @@
                                 }
                             }
                         },
-                        "inCluster": {
+                        "forceUpgrade": {
                             "type": "boolean"
                         },
-                        "forceUpgrade": {
+                        "inCluster": {
                             "type": "boolean"
                         },
                         "namespace": {
