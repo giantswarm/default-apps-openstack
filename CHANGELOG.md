@@ -7,17 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Update `observability-bundle` from `0.1.3` to `0.1.4`
+
 ## [0.8.0] - 2022-11-25
+
+### Added
+
+- Add `observability-bundle`, PLEASE Check [Upgrade Notes](https://github.com/giantswarm/default-apps-openstack/tree/main#to-08x)
+- Supports installing an app bundle
 
 ### Changed
 
 - Update `node-exporter-app` from `0.11.0` to `0.13.0`
-
-### Added
-
-- Add observability-bundle, PLEASE Check [Upgrade Notes](https://github.com/giantswarm/default-apps-openstack/tree/main#to-08x)
-
-- Supports installing an app bundle
 
 ## [0.7.3] - 2022-10-11
 
