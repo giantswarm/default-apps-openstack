@@ -97,7 +97,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/coredns-app
-    version: 1.11.0
+    version: 1.12.0
   csiExternalSnapshotter:
     appName: csi-external-snapshotter
     chartName: csi-external-snapshotter-app
