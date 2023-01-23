@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Update `node-exporter` to `1.15.0`
+- Update the workflow files to those coming from `devctl@5.17.0`.
 
 ## [0.8.1] - 2022-12-08
 
