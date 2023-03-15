@@ -1,6 +1,6 @@
 # DO NOT EDIT. Generated with:
 #
-#    devctl@5.9.0
+#    devctl@5.19.0
 #
 
 include Makefile.*.mk
@@ -17,8 +17,6 @@ include Makefile.*.mk
 # https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters
 # More info on the awk command:
 # http://linuxcommand.org/lc3_adv_awk.php
-
-APPLICATION=default-apps-openstack
 
 .PHONY: help
 help: ## Display this help.
