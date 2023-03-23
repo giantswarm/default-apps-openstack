@@ -49,7 +49,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/cert-manager-app
-    version: 2.18.0
+    version: 2.20.3
   cilium:
     appName: cilium
     chartName: cilium
@@ -182,7 +182,7 @@ apps:
     namespace: kube-system
     # used by renovate
     # repo: giantswarm/vertical-pod-autoscaler-app
-    version: 2.5.3
+    version: 3.3.0
   vpaCRD:
     appName: vertical-pod-autoscaler-crd
     chartName: vertical-pod-autoscaler-crd
