@@ -1,4 +1,8 @@
 [![CircleCI](https://circleci.com/gh/giantswarm/default-apps-openstack.svg?style=shield)](https://circleci.com/gh/giantswarm/default-apps-openstack)
+# This repo is currently UNMAINTAINED.
+**If you want to work on it, please fork.**
+
+
 
 # default-apps-openstack chart
 
