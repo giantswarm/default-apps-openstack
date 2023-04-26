@@ -170,7 +170,7 @@ apps:
     inCluster: true
     # used by renovate
     # repo: giantswarm/observability-bundle
-    version: 0.4.0
+    version: 0.4.3
   vpa:
     appName: vertical-pod-autoscaler
     chartName: vertical-pod-autoscaler-app
